@@ -1,4 +1,4 @@
-bare-app
-========
+RailsPHP Bare Application
+=========================
 
 Bare-bones application.

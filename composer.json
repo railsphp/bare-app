@@ -1,0 +1,11 @@
+{
+    "name": "railsphp/bare-app",
+    "require": {
+        "railsphp/framework": "dev-master"
+    },
+    "scripts": {
+        "post-create-project-cmd": [
+            "Rails\\Toolbox\\AppRenamer::rename"
+        ]
+    }
+}
