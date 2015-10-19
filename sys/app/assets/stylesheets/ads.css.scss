@@ -1,0 +1,58 @@
+.ad-col {
+  @media (max-width: 1054px) {
+    display:none;
+  }
+  width: 160px;
+  height: 600px;
+  position:absolute;
+  
+  &.left {
+    margin-right:50%;
+    right:367px;
+  }
+  &.right {
+    margin-left:50%;
+    left:367px;
+  }
+  // background-color:navy;
+}
+
+.ad-row {
+  @media (min-width: 1054px) {
+    display:none;
+  }
+  // background-color:navy;
+  width:320px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.ad-square {
+  @media (min-width: 1054px) {
+    display:none;
+  }
+  // .top {
+    // @media (min-width: 768px) {
+      // display:none;
+    // }
+  // }
+  // background-color:navy;
+  width:300px;
+  height:250px;
+  margin: 0 auto;
+  &.mb {
+    margin-bottom: 10px;
+  }
+}
+
+// @media (min-width: 768px) {
+  // .ads-sq-top {
+    // width: 610px;
+    // .ad-square {
+      // float:left;
+      // &:first-child {
+        // margin-right: 10px;
+      // }
+    // }
+  // }
+// }

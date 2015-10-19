@@ -1,0 +1,13 @@
+/*http://stackoverflow.com/questions/19920391*/
+#fancybox-wrap, #fancybox-outter, #fancybox-content {
+    -moz-box-sizing: content-box;
+ -webkit-box-sizing: content-box;
+      -o-box-sizing: content-box;
+     -ms-box-sizing: content-box;
+         box-sizing: content-box;
+}
+
+#fancybox-content > div {
+  margin-top:    -20px;
+  margin-bottom: -20px;
+}

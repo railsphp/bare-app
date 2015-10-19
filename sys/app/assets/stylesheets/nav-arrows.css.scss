@@ -1,0 +1,46 @@
+.post-nav-arrows {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  
+  // background-color: rgba(255, 0, 0, 0.5);
+  
+  .arrow-box {
+    position: absolute;
+    top: 100px;
+    // bottom: -105px;
+    font-size: 105px;
+    opacity: 0.3;
+    
+    &.arrow-box-next {
+      left: -47px;
+    }
+    &.arrow-box-prev {
+      right: -40px;
+    }
+    
+    &:hover {
+      opacity: 1;
+    }
+    .arrow-container {
+      a {
+        color: inherit;
+      }
+    }
+  }
+    
+  @media (max-width: 768px) {
+    .arrow-box {
+      opacity: 0.5;
+      font-size: 85px;
+      top: 50px;
+      
+      &.arrow-box-next {
+        left: 0px;
+      }
+      &.arrow-box-prev {
+        right: 0px;
+      }
+    }
+  }
+}

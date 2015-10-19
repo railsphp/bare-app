@@ -1,0 +1,43 @@
+.pagination {
+  width: 100%;
+  text-align: center;
+  
+  li {
+    display:table-cell;
+    width: 1%;
+    
+    a, span {
+      background-color: black;
+      border: none;
+      width: 100%;
+    }
+      
+    &.disabled {
+      a, span {
+        color: white;
+      }
+    }
+    
+    &.active {
+      span, span:hover {
+        color: black;
+        background-color:white;
+      }
+    }
+  }
+  
+}
+
+.pagination > li:first-child > a, .pagination > li:first-child > span,
+.pagination > li:last-child  > a, .pagination > li:last-child  > span
+{
+  border-radius: 0px;
+}
+
+.pagination > .disabled > span, .pagination > .disabled > a, .pagination > .disabled > a:hover, .pagination > .disabled > a:focus {
+  background-color: #444;
+}
+
+.pagination > li > a:hover, .pagination > li > span:hover, .pagination > li > a:focus, .pagination > li > span:focus {
+  background-color: #666;
+}

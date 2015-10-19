@@ -1,0 +1,128 @@
+.post-preview {
+  background-color: rgb(32,32,32);
+  // Post title (h3) already sets top space. But for some reason it won't have effect unless
+  // the following padding has at least 1px on top.
+  padding: 1px 20px 20px;
+  @media (max-width: 768px) {
+    padding: 1px 5px 5px;
+  }
+  @media (max-width: 768px) {
+    width:100%;
+  }
+  margin-bottom: 10px;
+  
+  .meta {
+    opacity: 0.4;
+  }
+}
+
+.post-image-container {
+  text-align:center;
+  
+  @media (max-width: 768px) {
+    margin: 0px -5px -5px;
+  }
+  
+  img {
+    @media (min-width: 768px) {
+      max-width: 640px;
+    }
+    @media (max-width: 768px) {
+      max-height: 100%;
+      max-width:100%;
+    }
+  }
+}
+
+html.dhd {
+  .post-title {
+    @media (max-width: 768px) {
+      display:none;
+    }
+    a {
+      &:link, &:visited {
+        // color: #efefef;
+        color: gray;
+      }
+      font-family: "Trebuchet MS", sans-serif;
+      font-weight: bold;
+      // font-size: 24px;
+    }
+  }
+
+  .post-meta {
+    color: #666;
+    // a {
+      // &:link, &:visited {
+        // color: #666;
+      // }
+    // }
+    
+    // .tag-links {
+      a {
+        &:link, &:visited {
+          font-weight:bold;
+          color: #666;
+        }
+      }
+    // }
+  }
+}
+
+.post-show-container {
+  color: #A0A0A0;
+  position: relative;
+  .post-show {
+    padding-left:3px;
+    padding-right:3px;
+  }
+  .post-image-container {
+    img {
+      @media (min-width: 768px) {
+        max-width: 720px;
+      }
+    }
+  }
+}
+
+.post-share {
+  .pull-left {
+    margin-right: 5px;
+  }
+}
+
+
+.share-post {
+  text-align:center;
+  width: 100%;
+  height: 31px;
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  padding:3px;
+  background-color: #191919;
+  
+  .share-srv {
+    margin: 0px 3px;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+  }
+}
+
+.ad-320 {
+  width: 100%;
+  margin-bottom: 10px;
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .post-show-container {
+    margin-bottom: 15px;
+  }
+  .share-post {
+    position: static;
+  }
+}

@@ -1,0 +1,222 @@
+// @media (max-width: 768px) {
+  // html, body {
+    // max-height: 100%;
+  // }
+// }
+
+html.dhd {
+  // &, body {
+    // min-height: 650px;
+  // }
+  body {
+    background-color: #303030;
+    color: #fafafa;
+  }
+  &, body {
+    height: 100%;
+  }
+  
+  a {
+    color: #e60268;
+    &:link, &:visited {
+      color: #e60268;
+    }
+  }
+  
+  .navbar-main {
+    a.navbar-brand {
+      &:link, &:visited {
+        color: #a33366;
+      }
+    }
+    
+    a {
+      color: #efefef;
+    }
+  }
+  
+  .btn {
+    padding: .8em 1.4em;
+    
+    &.btn-primary {
+      background-color: #637585;
+      border: none;
+      border-radius: 0px;
+    }
+  }
+  
+  h1, h2, h3, h4, h5 {
+    color: #cfcfcf;
+  }
+  
+  input, textarea {
+    border-radius: 0px;
+    background-color: transparent;
+    border: 1px solid #444;
+    color: #a0a0a0;
+  }
+  
+  hr {
+    border-top-color: #4e4e4e;
+  }
+  
+  $placeholderColor: #666;
+  ::-webkit-input-placeholder { /* WebKit browsers */
+    color: $placeholderColor;
+  }
+  :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: $placeholderColor;
+  }
+  ::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: $placeholderColor;
+  }
+  :-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: $placeholderColor;
+  }
+  
+  // Override Tagit's styles.
+  .tagit.ui-corner-all {
+    border-radius: 0px;
+  }
+  ul.tagit input[type="text"] {
+    color: #777;
+  }
+  
+  .form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
+    background-color: #525252;
+  }
+  
+  @media (max-width: 768px) {
+    body {
+      font-size: 17px; 
+    }
+    h1 {
+      font-size:24px;
+    }
+  }
+}
+
+.container-main {
+  position:relative;
+  @media (max-width: 768px) {
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+  
+  .row-main {
+    width: 728px;
+    @media (max-width: 768px) {
+      width:100%;
+    }
+    margin-left: auto;
+    margin-right: auto;
+  }
+  margin-bottom:15px;
+  
+  .ad-col {
+    width: 160px;
+    height: 600px;
+    position:absolute;
+    
+    &.left {
+      margin-right:50%;
+      right:367px;
+    }
+    &.right {
+      margin-left:50%;
+      left:367px;
+    }
+  }
+}
+
+.footer-container {
+  // .big-view {
+    background-color: #222;
+    color: #777;
+    padding: 1.5em;
+    @media (max-width: 768px) {
+      padding: 0.5em;
+      font-size: 0.7em;
+      line-height: auto;
+    }
+    text-align: center;
+    
+    // position: absolute;
+    // bottom: 0;
+    // width: 100%;
+    // height: 60px;
+  // }
+}
+
+.navbar-user {
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .container-main {
+    padding-left: 0px;
+  }
+  // html, body {
+    // min-height: 100%;
+  // }
+  
+  body.top-navbar {
+    padding-top: 51px;
+  }
+  
+  body {
+    font-size: 12px;
+  }
+  
+  h1,
+  h2,
+  h3 {
+    margin-top: 16px;
+    margin-bottom: 7px;
+  }
+
+  h4,
+  h5,
+  h6 {
+    margin-top: 7px;
+    margin-bottom: 7px;
+  }
+
+  h1,
+  .h1 {
+    font-size: 25px;
+  }
+
+  h2,
+  .h2 {
+    font-size: 23px;
+  }
+
+  h3,
+  .h3 {
+    font-size: 20px;
+  }
+
+  h4,
+  .h4 {
+    font-size: 15px;
+  }
+
+  h5,
+  .h5 {
+    font-size: 12px;
+  }
+
+  h6,
+  .h6 {
+    font-size: 10px;
+  }
+  .footer-container {
+    display:none;
+  }
+}
+
+.navbar-nav > li > div {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
